@@ -1,0 +1,9 @@
+2022-08-11T16:56:48+00:00 CRITICAL Uncaught Error: Class 'Elementor\Widget_common' not found in /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/managers/widgets.php:86
+Stack trace:
+#0 /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/managers/widgets.php(297): Elementor\Widgets_Manager->init_widgets()
+#1 /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/elements/column.php(1044): Elementor\Widgets_Manager->get_widget_types('heading')
+#2 /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/base/element-base.php(819): Elementor\Element_Column->_get_default_child_type(Array)
+#3 /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/base/element-base.php(338): Elementor\Element_Base->get_child_type(Array)
+#4 /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/base/element-base.php(864): Elementor\Element_Base->add_child(Array)
+#5 /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/base/element-base.php(298): Elementor\Element_Base->init_chi у /home/xv460566/yes.shoes/www/wp-content/plugins/elementor/includes/managers/widgets.php доступно 86
+
