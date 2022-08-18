@@ -22,7 +22,7 @@ endif;
         <?php echo $message ? wpautop(wptexturize($message)) : ''; // @codingStandardsIgnoreLine ?>
 
         <p class="form-row form-row-first">
-            <label for="username"><?php esc_html_e('Username or email', 'elessi-theme'); ?>&nbsp;<span class="required">*</span></label>
+            <label for="username"><?php esc_html_e("Ім'я користувача", 'elessi-theme'); ?>&nbsp;<span class="required">*</span></label>
             <input type="text" class="input-text" name="username" id="username" autocomplete="username" />
         </p>
         <p class="form-row form-row-last">
@@ -47,7 +47,7 @@ endif;
             <?php wp_nonce_field('woocommerce-login', 'woocommerce-login-nonce'); ?>
             <input type="hidden" name="redirect" value="<?php echo esc_url($redirect) ?>" />
 
-            <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e('Login', 'elessi-theme'); ?>"><?php esc_html_e('Login', 'elessi-theme'); ?></button>
+            <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e('Login', 'elessi-theme'); ?>"><?php esc_html_e('Логін', 'elessi-theme'); ?></button>
         </p>
 
         <div class="clear"></div>

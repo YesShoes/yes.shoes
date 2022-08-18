@@ -8590,6 +8590,10 @@ img.mfp-img {
   line-height: 0;
 }
 
+.mfp-title {
+  display: none
+}
+
 .mfp-bottom-bar {
   margin-top: -26px;
   position: absolute;
@@ -8597,14 +8601,6 @@ img.mfp-img {
   left: 0;
   width: 100%;
   cursor: auto;
-}
-
-.mfp-title {
-  margin-right: 10px;
-  display: inline-block;
-  text-align: left;
-  line-height: 18px;
-  color: #f3f3f3;
 }
 
 .mfp-counter {
@@ -17997,4 +17993,41 @@ input[type="submit"][disabled]:hover {
   100% {
     background-position: 100em 0;
   }
+}
+
+.nasa-col-flex .nasa-wrap-popup-nodes {
+  white-space: normal;
+}
+@media (max-width: 768px) {
+  .shop-sale {
+    font-size: 12px;
+  }
+}
+
+body .product-item .nasa-product-content-nasa_label-wrap .nasa-product-content-child {
+  display: none;
+}
+
+.woocommerce .order-review {
+  background: #fff!important;
+}
+
+.woocommerce-checkout-review-order table thead th, .woocommerce-checkout-review-order table thead .product-name {
+  padding-left: -10px!important;
+}
+
+.woocommerce-checkout-review-order table thead tr:last-child th.product-name:after {
+  left: 10px!important;
+}
+
+.woocommerce-checkout-review-order table th {
+  padding-left: 10px!important;
+}
+
+#shipping_method li {
+  margin: 0 0 10px 0;
+}
+
+#main-content form .form-row {
+  margin-bottom: 20px!important;
 }

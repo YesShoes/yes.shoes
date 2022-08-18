@@ -633,26 +633,7 @@ class Nasa_WC_Attr_UX extends Nasa_Abstract_WC_Attr_UX {
                 // $this->_content .= '<span class="hidden-tag nasa-label-variants">' . wc_attribute_label('pa_' . $attr_name) . '</span>';
                 
                 $this->_content .= '<div class="nasa-product-content-child nasa-product-content-' . sanitize_title($attr_name) . '-wrap-child" data-pa_name="' . sanitize_title($attr_name) . '">';
-                
-                $k = 1;
-                foreach ($terms as $term) {
-                    if (in_array($term->slug, $array_keys)) {
-                        $this->_content .= sprintf(
-                            '<a href="javascript:void(0);" class="nasa-attr-ux-item nasa-attr-ux-' . self::_NASA_LABEL . ' nasa-attr-ux-%s %s" data-value="%s" data-pa="%s" data-act="%s" rel="nofollow">%s</a>',
-                            esc_attr($term->slug),
-                            $objs[$term->slug]['active'] ? 'nasa-active' : '',
-                            esc_attr($term->slug),
-                            sanitize_title($attr_name),
-                            $objs[$term->slug]['active'] ? '1' : '0',
-                            $objs[$term->slug]['value']
-                        );
 
-                        if ($this->_max_show && $k >= $this->_max_show) {
-                            break;
-                        }
-                        $k++;
-                    }
-                }
 
                 $this->_content .= '</div>';
             }
@@ -673,27 +654,7 @@ class Nasa_WC_Attr_UX extends Nasa_Abstract_WC_Attr_UX {
                 // $this->_content .= '<span class="hidden-tag nasa-label-variants">' . wc_attribute_label('pa_' . $attr_name) . '</span>';
                 
                 $this->_content .= '<div class="nasa-product-content-child nasa-product-content-' . sanitize_title($attr_name) . '-wrap-child nasa-color-wrap-child" data-pa_name="' . sanitize_title($attr_name) . '">';
-                
-                $k = 1;
-                foreach ($terms as $term) {
-                    if (in_array($term->slug, $array_keys)) {
-                        $this->_content .= sprintf(
-                            '<a href="javascript:void(0);" class="nasa-attr-ux-item nasa-attr-ux-' . self::_NASA_COLOR . ' nasa-attr-ux-%s %s" data-value="%s" data-pa="%s" data-act="%s" rel="nofollow"><span style="background-color:%s;">%s</span></a>',
-                            esc_attr($term->slug),
-                            $objs[$term->slug]['active'] ? 'nasa-active' : '',
-                            esc_attr($term->slug),
-                            sanitize_title($attr_name),
-                            $objs[$term->slug]['active'] ? '1' : '0',
-                            esc_attr($objs[$term->slug]['value']),
-                            $objs[$term->slug]['name']
-                        );
-                        
-                        if ($this->_max_show && $k >= $this->_max_show) {
-                            break;
-                        }
-                        $k++;
-                    }
-                }
+
                 
                 $this->_content .= '</div>';
             }
@@ -710,28 +671,7 @@ class Nasa_WC_Attr_UX extends Nasa_Abstract_WC_Attr_UX {
                 $array_keys = array_keys($objs);
                 
                 $this->_content .= '<div class="nasa-product-content-child nasa-product-content-' . sanitize_title($attr_name) . '-wrap-child nasa-image-wrap-child" data-pa_name="' . sanitize_title($attr_name) . '">';
-                
-                $k = 1;
-                foreach ($terms as $term) {
-                    if (in_array($term->slug, $array_keys)) {
-                        $image = $this->get_image_preview($objs[$term->slug]['value'], false, 20, 20, $objs[$term->slug]['name']);
-                        $this->_content .= sprintf(
-                            '<a href="javascript:void(0);" class="nasa-attr-ux-item nasa-attr-ux-' . self::_NASA_IMAGE . ' nasa-attr-ux-%s %s" data-value="%s" data-pa="%s" data-act="%s" rel="nofollow">%s</a>',
-                            esc_attr($term->slug),
-                            $objs[$term->slug]['active'] ? 'nasa-active' : '',
-                            esc_attr($term->slug),
-                            sanitize_title($attr_name),
-                            $objs[$term->slug]['active'] ? '1' : '0',
-                            $image
-                        );
-                        
-                        if ($this->_max_show && $k >= $this->_max_show) {
-                            break;
-                        }
-                        
-                        $k++;
-                    }
-                }
+
                 
                 $this->_content .= '</div>';
             }

@@ -2120,11 +2120,11 @@ function nasa_fake_sold() {
             $fake_sold_data .= '<img class="last-sold-img" src="' . NASA_CORE_PLUGIN_URL . 'assets/images/flame.png" alt="' . esc_attr__('Last Sold', 'nasa-core') . '" width="18" height="18" />&nbsp;&nbsp;';
             
             $fake_sold_data .= $times > 1 ? sprintf(
-                esc_html__('%s sold in last %s hours', 'nasa-core'),
+                esc_html__('%s продано в останні %s годин', 'nasa-core'),
                 $sold,
                 $times
             ) : sprintf(
-                esc_html__('%s sold in last %s hour', 'nasa-core'),
+                esc_html__('%s продано в останні %s годин', 'nasa-core'),
                 $sold,
                 $times
             );
@@ -2212,7 +2212,7 @@ function nasa_fake_view() {
     
     $fake_view = '<div id="nasa-counter-viewing" class="nasa-viewing nasa-promote-sales nasa-crazy-inline" data-min="' . $min . '" data-max="' . $max . '" data-delay="' . ($delay * 1000) . '" data-change="' . $change . '" data-id="' . $product_id . '">';
     $fake_view .= '<i class="nasa-icon pe-7s-smile pe-icon"></i>&nbsp;&nbsp;<strong class="nasa-count">...</strong>&nbsp;';
-    $fake_view .= wp_kses(__('<strong>people</strong>&nbsp;are viewing this right now', 'nasa-core'), $allowed_html);
+    $fake_view .= wp_kses(__('<strong>людей</strong>&nbsp;переглядають це прямо зараз', 'nasa-core'), $allowed_html);
     $fake_view .= '</div>';
     
     /**

@@ -10,3 +10,7 @@ Version: 1.0
 
 
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
+
+.nasa-wrap-popup-nodes {
+    display: none;
+}
